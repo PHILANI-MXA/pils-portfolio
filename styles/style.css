@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.icon-bar {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 5px;
+    background-color: white;
+    overflow-x: hidden;
+    line-height: 50px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    border: solid black;
+    background-size: cover;
+}
+
+.icon-bar ul {
+    margin-top: -30px;
+    padding-top: 20px;
+}
+
+.icon-bar ul li {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    line-height: 50px;
+    list-style: none;
+    display: inline-block;
+}
+
+.icon-bar ul input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    background: white;
+    padding-left: 50px;
+    font-size: 20px;
+    color: rgb(149, 42, 42);
+}
+
+.icon-bar ul li a {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.icon-bar ul li a:hover {
+    color: brown;
+    background: black;
+    text-decoration: none;
+}
+
+.icon-bar ul li a i:visited {
+    color: blue;
+}
+
+.icon-bar ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    height: 10vh;
+    width: 10vw;
+    background-color: white;
+}
+
+.fa-search {
+    background-color: aqua;
+    text-decoration: none;
+    margin: 4px;
+}
+
+.fa-envelope {
+    background-color: orangered;
+    text-decoration: none;
+    margin: 4px;
+}
+
+.fa-home {
+    background-color: red;
+    text-decoration: none;
+    margin: 4px;
+}
+
+.fa-question-circle {
+    background-color: black;
+    text-decoration: none;
+    margin: 4px;
+}
+
+.fa-globe {
+    background-color: blue;
+    text-decoration: none;
+    margin: 4px;
+}
+
+.fa-question-circle {
+    background-color: limegreen;
+    text-decoration: none;
+    margin: 4px;
+}
+
+.container {
+    background-color: rgba(177, 211, 241, 0.2);
+    width: 200px;
+    height: 250px;
+    border-radius: 25%;
+    margin: 20px auto;
+}
+
+#card {
+    width: 800px;
+    height: 700px;
+    position: absolute;
+    text-align: center;
+    transition: transform 0.10s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.container:hover #card {
+    transform: rotateY(180deg);
+}
+
+#front,
+#back {
+    position: absolute;
+    width: 800px;
+    height: 700px;
+    border-radius: 20%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: visible;
+    -moz-backface-visibility: hidden;
+}
+
+#front {
+    background-color: darkgoldenrod;
+}
+
+main {
+    min-height: 100vh;
+}

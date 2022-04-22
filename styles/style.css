@@ -14,8 +14,6 @@
     background-color: white;
     overflow-x: hidden;
     line-height: 50px;
-    text-decoration: none;
-    list-style: none;
     box-sizing: border-box;
     border: solid black;
     background-size: cover;
@@ -76,10 +74,25 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     height: 10vh;
     width: 10vw;
-    background-color: white;
+    background-color: rgb(23, 200, 197);
+}
+
+img {
+    background-position-y: center;
+}
+
+figcaption {
+    position: absolute;
+    margin: auto;
+    padding-bottom: 80px;
+    margin-bottom: 20px;
 }
 
 .fa-search {
@@ -118,6 +131,29 @@ body {
     margin: 4px;
 }
 
+main {
+    min-height: 100vh;
+}
+
+
+/* vision */
+
+#contact_b {
+    background-color: aqua;
+    background: fixed;
+    height: 100%;
+}
+
+#photographs {
+    margin: auto;
+    padding: 20px;
+    line-height: 40px;
+}
+
+section #photographs {
+    margin: auto;
+}
+
 .container {
     background-color: rgba(177, 211, 241, 0.2);
     width: 200px;
@@ -127,8 +163,8 @@ body {
 }
 
 #card {
-    width: 800px;
-    height: 700px;
+    width: 200px;
+    height: 250px;
     position: absolute;
     text-align: center;
     transition: transform 0.10s ease-in-out;
@@ -142,18 +178,14 @@ body {
 #front,
 #back {
     position: absolute;
-    width: 800px;
-    height: 700px;
+    width: 200px;
+    height: 250px;
     border-radius: 20%;
     -webkit-backface-visibility: hidden;
-    backface-visibility: visible;
+    backface-visibility: hidden;
     -moz-backface-visibility: hidden;
 }
 
 #front {
-    background-color: darkgoldenrod;
-}
-
-main {
-    min-height: 100vh;
+    background-color: white;
 }

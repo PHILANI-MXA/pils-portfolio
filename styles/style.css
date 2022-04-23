@@ -4,18 +4,17 @@
 }
 
 .icon-bar {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+    font-family: 'Arial Narrow', Arial;
     height: 100%;
     width: 160px;
     position: fixed;
     z-index: 1;
-    top: 0;
-    left: 5px;
-    background-color: white;
+    top: 220px;
+    left: 40px;
+    background-color: transparent;
     overflow-x: hidden;
-    line-height: 50px;
+    line-height: 35px;
     box-sizing: border-box;
-    border: solid black;
     background-size: cover;
 }
 
@@ -42,16 +41,31 @@
     top: 0;
     border-radius: 12px;
     outline: none;
-    background: white;
     padding-left: 50px;
     font-size: 20px;
     color: rgb(149, 42, 42);
 }
 
-.icon-bar ul li a {
-    color: black;
+.main-title {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    color: rgb(38, 53, 87);
+    background-color: white;
+    margin-left: 320px;
+    margin-right: 320px;
+    border-radius: 8px;
+    box-shadow: 10px 1px 10px -1px blueviolet;
+}
+
+ul li a {
+    color: white;
     display: flex;
     align-items: center;
+    line-height: 10px;
 }
 
 .icon-bar ul li a:hover {
@@ -60,16 +74,7 @@
     text-decoration: none;
 }
 
-.icon-bar ul li a i:visited {
-    color: blue;
-}
-
 .icon-bar ul {
-    text-decoration: none;
-    list-style: none;
-}
-
-ul {
     text-decoration: none;
     list-style: none;
 }
@@ -78,114 +83,255 @@ a {
     text-decoration: none;
 }
 
-body {
-    height: 10vh;
-    width: 10vw;
-    background-color: rgb(23, 200, 197);
+i {
+    color: blueviolet;
+    background-color: transparent;
 }
 
-img {
-    background-position-y: center;
-}
 
-figcaption {
-    position: absolute;
-    margin: auto;
-    padding-bottom: 80px;
-    margin-bottom: 20px;
+/*Styling My Side Navbar Icons*/
+
+.fa-home {
+    background-color: transparent;
+    text-decoration: none;
+    margin: 10px;
 }
 
 .fa-search {
-    background-color: aqua;
+    background-color: transparent;
     text-decoration: none;
-    margin: 4px;
-}
-
-.fa-envelope {
-    background-color: orangered;
-    text-decoration: none;
-    margin: 4px;
-}
-
-.fa-home {
-    background-color: red;
-    text-decoration: none;
-    margin: 4px;
-}
-
-.fa-question-circle {
-    background-color: black;
-    text-decoration: none;
-    margin: 4px;
+    margin: 10px;
 }
 
 .fa-globe {
-    background-color: blue;
+    background-color: transparent;
     text-decoration: none;
-    margin: 4px;
+    margin: 10px;
 }
 
 .fa-question-circle {
-    background-color: limegreen;
+    background-color: transparent;
     text-decoration: none;
-    margin: 4px;
+    margin: 10px;
 }
 
-main {
+.fa-envelope {
+    background-color: transparent;
+    text-decoration: none;
+    margin: 10px;
+}
+
+
+/* background image */
+
+.homepage {
+    background-image: url(/images/Philanibgrnd.JPG);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header,
+footer {
     min-height: 100vh;
+    min-width: 100%;
 }
 
-
-/* vision */
-
-#contact_b {
-    background-color: aqua;
-    background: fixed;
-    height: 100%;
-}
-
-#photographs {
-    margin: auto;
-    padding: 20px;
-    line-height: 40px;
-}
-
-section #photographs {
-    margin: auto;
-}
-
-.container {
-    background-color: rgba(177, 211, 241, 0.2);
-    width: 200px;
-    height: 250px;
-    border-radius: 25%;
-    margin: 20px auto;
-}
-
-#card {
-    width: 200px;
-    height: 250px;
-    position: absolute;
-    text-align: center;
-    transition: transform 0.10s ease-in-out;
-    transform-style: preserve-3d;
-}
-
-.container:hover #card {
-    transform: rotateY(180deg);
-}
-
-#front,
-#back {
-    position: absolute;
-    width: 200px;
-    height: 250px;
-    border-radius: 20%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-}
-
-#front {
+#main-content {
+    min-height: 100vh;
     background-color: white;
+    background-size: cover;
+}
+
+
+/* Technical skills certicates */
+
+#items {
+    width: 100vw;
+    height: 100vh;
+}
+
+.certificates {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 50px;
+    flex-wrap: wrap;
+}
+
+.technical-skills-div {
+    width: 100%;
+    height: 30px;
+    background-color: brown;
+}
+
+.achievements {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(69, 165, 42);
+}
+
+.interests {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(75, 42, 165);
+}
+
+
+/* My Achievements */
+
+#item {
+    width: 100vw;
+    height: 100vh;
+}
+
+.achievements {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    line-height: 30px;
+}
+
+#ite {
+    width: 100vw;
+    height: 100vh;
+}
+
+.careerob {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    line-height: 20px;
+}
+
+
+/* ABOUT PHILANI PAGE */
+
+.tech-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+.achieve-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+.about-achieve {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-interests {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img1 {
+    width: 400px;
+    height: 300px;
+    border: 2px groove black;
+}
+
+.i1 {
+    width: 400px;
+    height: 300px;
+    border: 2px groove black;
+}
+
+.g1 {
+    width: 400px;
+    height: 300px;
+    border: 2px groove black;
+}
+
+#tech-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 20px;
+    color: white;
+    background-color: black;
+}
+
+#achieve-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 20px;
+    color: white;
+    background-color: black;
+}
+
+.tech-skills {
+    background-color: white;
+}
+
+
+/* FORM */
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.about-contact {
+    border-radius: 5px;
+    background-color: rgb(37, 53, 86);
+    padding: 20px;
+    width: 800px;
+    margin: auto;
 }
